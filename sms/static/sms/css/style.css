@@ -1,0 +1,10 @@
+
+body{
+    background-image: url("../images/boss.jpg");
+    width: fit-content;
+}
+p{
+    color: blue;
+    font-size: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

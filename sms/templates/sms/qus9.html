@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIME OR NOT</title>
+    <script>
+        function prime_number(){
+           var i , chk=0;
+           var num=document.getElementById('msg').value 
+           for(i=2;i<num; i++)
+           {
+               if(num%2==0)
+               {
+                   chk++;
+                   break;
+               }
+           }
+
+           if(chk==0)
+              document.write(num+"<b>"+ " is a Prime Number"+"<b/>")
+           else
+              document.write(num+"<b>"+ " is not a Prime Number"+"<b/>")
+        }
+    </script>
+</head>
+<body>
+   <p>Enter a Number : <input type="text" id="msg"><button onclick="prime_number()">CHECK</button></p> 
+</body>
+</html>

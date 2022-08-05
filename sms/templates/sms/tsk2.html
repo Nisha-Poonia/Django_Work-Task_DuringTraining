@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO ADDRESS FILLING</title>
+    <script>
+        function per_address(){
+            
+            if(cb.checked==true){
+                t2.value=t1.value;
+            }
+        }
+    </script>
+</head>
+<body>
+    <b>permanent Address : <input type="text" id="t1" ></b><br><br>
+    <b>Same as Permanent Address<input type="checkbox" onclick="per_address()" id="cb"></b><br><br>
+    <b>Correspondance Address : <input type="text" id="t2"></b>
+</body>
+</html>

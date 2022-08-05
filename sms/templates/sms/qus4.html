@@ -1,0 +1,35 @@
+<!-- WAP TO INPUT A CHARACTER AND CHECK UPPERCASE,LOWERCASE,DIGITS,SPECIAL SYMBOL. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>UPPERCASE,LOWERCASE,DIGITS,SPECIAL SYMBOL</title>
+    <script>
+        var ch;
+        function checkVowel()
+        {
+            ch=document.getElementById("char").value;
+
+            if(ch>='a' && ch<='z')   
+               document.write("<b>"+ch+ "</b>"+" is in LOWERCASE");
+
+            else if (ch>='A' && ch<='Z')   
+                document.write("<b>"+ch+ "</b>"+" is in UPPERCASE");
+            
+            else if (ch>=48 || ch<=57)
+                document.write("<b>"+ch+ "</b>"+" is a Digit or Number");
+        
+            else
+                document.write("<b>"+ch+ "</b>"+" is a Special Symbol");
+            }
+    </script>
+</head>
+<body>
+    <p>Enter the anything : <input type="text" id="char"><button onclick="checkVowel()">check</button></p>
+  
+</body>
+</html>

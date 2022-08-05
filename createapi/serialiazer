@@ -1,0 +1,8 @@
+from dataclasses import fields
+from sms.models import Student
+from rest_framework.serializers import ModelSerializer
+
+class StudentSerializer(ModelSerializer):
+    class Meta:
+        model=Student
+        fields=['name','address','mobileno']

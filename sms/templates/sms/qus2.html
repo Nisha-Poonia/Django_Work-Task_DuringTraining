@@ -1,0 +1,65 @@
+<!-- WAP TO INPUT A CHARACTER AND CHECK ITS VOWEL OR CONSONANT
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOWEL OR CONSONANT</title>
+    <script>
+        var ch;
+        function checkVowel()
+        {
+            ch=document.getElementById("char").value;
+            if((ch>='a' && ch<='z') || (ch>='A' &&  ch<='Z'))
+            {
+                if(ch=='a' || ch=='e' || ch=='i'||ch=='o' || ch=='u')
+                document.write("<b>"+ch+ "</b>"+" is a vowel");
+                else if (ch=='A' || ch=='E' || ch=='I'||ch=='O' || ch=='U')
+                document.write("<b>"+ch+ "</b>"+" is a vowel");
+                else
+                document.write("<b>"+ch+ "</b>"+" is a consonant");
+            }
+            else
+            document.write("<b>"+ch+ "</b>"+"neither vowel nor consonant");
+        }
+    </script>
+</head>
+<body>
+    <p>Enter the character : <input type="text" id="char"><button onclick="checkVowel()">check</button></p>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vowel or consonant</title>
+    <script>
+        var ch;
+        function checkvowel()
+        {
+            ch=document.getElementById('char').value ;
+            if ((ch>='A' && ch<='Z') || (ch>='a' && ch<='z'))
+                {
+                    if (ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U')
+                         document.write("<h1>"+ch+ "</h1>"+"is a vowel")
+                    else if  (ch=='a' || ch=='e'|| ch=='i'|| ch=='o' ||ch=='u')
+                        document.write("<h1>"+ch+ "</h1">+"is a vowel");
+                    else 
+                    document.write("<h1>"+ch+ "</h1">+"is a consonant");
+                }
+            else 
+            document.write("<h1>"+ch+ "</h1">+"is neither vowel nor consonant");
+        }
+        
+    </script>
+</head>
+<body>
+    <p>Enter character: <input type="text" id="char"><button onclick="checkvowel()">CHECK</button></p>
+</body>
+</html> 

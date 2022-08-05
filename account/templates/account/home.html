@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+</head>
+<body bgcolor="lime" align="center" >
+    <h1>**WELCOME TO ACCOUNT PAGE**</h1>
+    <table border="3" width="50%" height="60%" bgcolor="powdweblue" align="center">
+        <tr>
+            <th>Refference</th>
+            <th> Link </th>
+        </tr>
+        <tr>
+            <td>UserName</td>
+            <td>{{user}}</td>
+        </tr>
+        <tr>
+            <!-- <td><a href="http://127.0.0.1:8000/account/" target="_blank">Home</a></td> -->
+            <td>Home</td>
+            <td><a href="{% url 'home' %}">home</a></td>
+        </tr>
+        <tr>
+            <!-- <td><a href="http://127.0.0.1:8000/account/" target="_blank">Home</a></td> -->
+            <td>Amazon</td>
+            <td><a href="https://www.amazon.in/" target="_blank">amazon</a></td>
+        </tr>
+        <tr>
+            <!-- <td><a href="http://127.0.0.1:8000/account/" target="_blank">Home</a></td> -->
+            <td>Register</td>
+            <td><a href="{% url 'register' %}" target="_blank"register>register</a></td>
+        </tr>
+        <tr>
+            <!-- <td><a href="http://127.0.0.1:8000/account/" target="_blank">Home</a></td> -->
+            <td>Login</td>
+            <td><a href="{% url 'login' %}">login</a></td>
+        </tr>
+        <tr>
+            <!-- <td><a href="http://127.0.0.1:8000/account/" target="_blank">Home</a></td> -->
+            <td>Logout</td>
+            <td><a href="{% url 'logout' %}">logout</a></td>
+        </tr>
+        <tr>
+            <!-- <td><a href="http://127.0.0.1:8000/account/" target="_blank">Home</a></td> -->
+            <td>Secure1</td>
+            <td><a href="{% url 'secure1' %}">secure1</a></td>
+        </tr>
+        <tr>
+            <!-- <td><a href="http://127.0.0.1:8000/account/" target="_blank">Home</a></td> -->
+            <td>Secure2</td>
+            <td><a href="{% url 'secure2' %}">secure2</a></td>
+        </tr>
+        <tr>
+            <!-- <td><a href="http://127.0.0.1:8000/account/" target="_blank">Home</a></td> -->
+            <td>Unsecure1</td>
+            <td><a href="{% url 'unsecure1' %}">unsecure1</a></td>
+        </tr>
+        <tr>
+            <!-- <td><a href="http://127.0.0.1:8000/account/" target="_blank">Home</a></td> -->
+            <td>Unsecure2</td>
+            <td><a href="{% url 'unsecure2' %}">unsecure2</a></td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>

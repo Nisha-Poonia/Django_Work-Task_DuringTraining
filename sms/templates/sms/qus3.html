@@ -1,0 +1,28 @@
+<!-- WAP TO INPUT A YEAR AND CHECKS ITS LEAP YEAR OR NOT -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEAP YEAR OR NOT</title>
+</head>
+<body>
+    <h1>Check Leap Year or not</h1>
+    Enter the year : <input type="text" class="year">
+    <button class="Btn">CHECK</button>
+  <div class="result"></div>
+  <script>
+      let resultEle=document.querySelector(".result");
+      let yearEle=document.querySelector(".year");
+
+      document.querySelector(".Btn").addEventListener("click",()=>{
+          if (yearEle.value%4==0){
+              resultEle.innerHTML=yearEle.value+" is a leap year";
+          } else resultEle.innerHTML= yearEle.value+" is not a leap year";
+      });
+  </script>
+    
+</body>
+</html>

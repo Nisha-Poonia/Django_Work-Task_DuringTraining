@@ -1,0 +1,35 @@
+<!-- WAP TO INPUT A NUMBER AND CHECKS ITS ARMSTRONG OR NOT -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARMSTRONG OR NOT</title>
+    <script>
+        function armStrong(){
+            var num=document.getElementById('msg').value
+            var sum=0,power,originalnum,len,last;
+            len=num.toString.length;
+            originalnum=num;
+            while(num>0){
+                last=num%10;
+                power=Math.pow(last,len);
+                sum=sum+power;
+                num=parseInt(num/10);
+            }
+            if(originalnum==sum){
+                document.write(originalnum+ " is an ARMSTRONG NUMBER")
+            }
+            else{
+                document.write(originalnum+ " is not an ARMSTRONG NUMBER")
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Enter a Number : <input type="text" id="msg"><button onclick="armStrong()">CHECK</button></p>
+    
+</body>
+</html>
